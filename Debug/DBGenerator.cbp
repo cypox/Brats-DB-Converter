@@ -1,0 +1,1175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="DBGenerator" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\opt\ITK\;CMake Files\..\..\..\..\..\opt\ITK\Bin\;CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\;CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\;CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\;CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\;CMake Files\..\..\..\..\..\opt\ITK\CMake\;CMake Files\..\..\..\..\..\opt\caffe\;CMake Files\..\..\..\..\..\opt\caffe\bin\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\share\;CMake Files\..\..\..\..\..\usr\share\OpenCV\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="generate">
+         <Option output="/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/generate" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DCPU_ONLY" />
+            <Add option="-DITK_IO_FACTORY_REGISTER_MANAGER" />
+            <Add directory="/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/ITKIOFactoryRegistration" />
+            <Add directory="/opt/ITK/Bin/Modules/Core/Common" />
+            <Add directory="/opt/ITK/Bin/Modules/IO/ImageBase" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/DoubleConversion/src/double-conversion" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/GDCM" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/KWSys/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/MetaIO/src/MetaIO/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/Netlib" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/PNG/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/TIFF/src/itktiff" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/opt/ITK/Modules/Bridge/VTK/include" />
+            <Add directory="/opt/ITK/Modules/Core/Common/include" />
+            <Add directory="/opt/ITK/Modules/Core/FiniteDifference/include" />
+            <Add directory="/opt/ITK/Modules/Core/GPUCommon/include" />
+            <Add directory="/opt/ITK/Modules/Core/GPUFiniteDifference/include" />
+            <Add directory="/opt/ITK/Modules/Core/ImageAdaptors/include" />
+            <Add directory="/opt/ITK/Modules/Core/ImageFunction/include" />
+            <Add directory="/opt/ITK/Modules/Core/Mesh/include" />
+            <Add directory="/opt/ITK/Modules/Core/QuadEdgeMesh/include" />
+            <Add directory="/opt/ITK/Modules/Core/SpatialObjects/include" />
+            <Add directory="/opt/ITK/Modules/Core/TestKernel/include" />
+            <Add directory="/opt/ITK/Modules/Core/Transform/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/AnisotropicSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/AntiAlias/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/BiasCorrection/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/BinaryMathematicalMorphology/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Colormap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Convolution/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/CurvatureFlow/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Deconvolution/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Denoising/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DiffusionTensorImage/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DisplacementField/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DistanceMap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/FFT/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/FastMarching/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUAnisotropicSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUImageFilterBase/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUThresholding/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageCompare/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageCompose/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFeature/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFilterBase/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFusion/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageGradient/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageGrid/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageIntensity/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageLabel/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageNoise/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageSources/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageStatistics/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/LabelMap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/MathematicalMorphology/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Path/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/QuadEdgeMeshFiltering/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Smoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/SpatialFunction/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Thresholding/include" />
+            <Add directory="/opt/ITK/Modules/IO/BMP/include" />
+            <Add directory="/opt/ITK/Modules/IO/BioRad/include" />
+            <Add directory="/opt/ITK/Modules/IO/CSV/include" />
+            <Add directory="/opt/ITK/Modules/IO/GDCM/include" />
+            <Add directory="/opt/ITK/Modules/IO/GE/include" />
+            <Add directory="/opt/ITK/Modules/IO/GIPL/include" />
+            <Add directory="/opt/ITK/Modules/IO/HDF5/include" />
+            <Add directory="/opt/ITK/Modules/IO/IPL/include" />
+            <Add directory="/opt/ITK/Modules/IO/ImageBase/include" />
+            <Add directory="/opt/ITK/Modules/IO/JPEG/include" />
+            <Add directory="/opt/ITK/Modules/IO/LSM/include" />
+            <Add directory="/opt/ITK/Modules/IO/MRC/include" />
+            <Add directory="/opt/ITK/Modules/IO/Mesh/include" />
+            <Add directory="/opt/ITK/Modules/IO/Meta/include" />
+            <Add directory="/opt/ITK/Modules/IO/NIFTI/include" />
+            <Add directory="/opt/ITK/Modules/IO/NRRD/include" />
+            <Add directory="/opt/ITK/Modules/IO/PNG/include" />
+            <Add directory="/opt/ITK/Modules/IO/RAW/include" />
+            <Add directory="/opt/ITK/Modules/IO/Siemens/include" />
+            <Add directory="/opt/ITK/Modules/IO/SpatialObjects/include" />
+            <Add directory="/opt/ITK/Modules/IO/Stimulate/include" />
+            <Add directory="/opt/ITK/Modules/IO/TIFF/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformBase/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformHDF5/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformInsightLegacy/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformMatlab/include" />
+            <Add directory="/opt/ITK/Modules/IO/VTK/include" />
+            <Add directory="/opt/ITK/Modules/IO/XML/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Eigen/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/FEM/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/NarrowBand/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/NeuralNetworks/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Optimizers/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Optimizersv4/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Polynomials/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Statistics/include" />
+            <Add directory="/opt/ITK/Modules/Registration/Common/include" />
+            <Add directory="/opt/ITK/Modules/Registration/FEM/include" />
+            <Add directory="/opt/ITK/Modules/Registration/GPUCommon/include" />
+            <Add directory="/opt/ITK/Modules/Registration/GPUPDEDeformable/include" />
+            <Add directory="/opt/ITK/Modules/Registration/Metricsv4/include" />
+            <Add directory="/opt/ITK/Modules/Registration/PDEDeformable/include" />
+            <Add directory="/opt/ITK/Modules/Registration/RegistrationMethodsv4/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/BioCell/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Classifiers/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/ConnectedComponents/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/DeformableMesh/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/KLMRegionGrowing/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LabelVoting/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LevelSets/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LevelSetsv4/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/MarkovRandomFieldsClassifiers/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/RegionGrowing/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/SignedDistanceFunction/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Voronoi/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Watersheds/include" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/DoubleConversion/src/double-conversion" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/DataDictionary" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/DataStructureAndEncodingDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/InformationObjectDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MediaStorageAndFileFormat" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MessageExchangeDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GIFTI/src/gifticlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/MetaIO/src/MetaIO/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NIFTI/src/nifti/niftilib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NIFTI/src/nifti/znzlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/PNG/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNLInstantiation/include" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/opt/ITK/Modules/Video/Core/include" />
+            <Add directory="/opt/ITK/Modules/Video/Filtering/include" />
+            <Add directory="/opt/ITK/Modules/Video/IO/include" />
+            <Add directory="/opt/caffe/bin/include" />
+            <Add directory="/opt/caffe/include" />
+            <Add directory="/opt/caffe/src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/atlas" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/opencv" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 generate" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="generate/fast">
+         <Option output="/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/generate" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DCPU_ONLY" />
+            <Add option="-DITK_IO_FACTORY_REGISTER_MANAGER" />
+            <Add directory="/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/ITKIOFactoryRegistration" />
+            <Add directory="/opt/ITK/Bin/Modules/Core/Common" />
+            <Add directory="/opt/ITK/Bin/Modules/IO/ImageBase" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/DoubleConversion/src/double-conversion" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/GDCM" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/KWSys/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/MetaIO/src/MetaIO/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/Netlib" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/PNG/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/TIFF/src/itktiff" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/opt/ITK/Modules/Bridge/VTK/include" />
+            <Add directory="/opt/ITK/Modules/Core/Common/include" />
+            <Add directory="/opt/ITK/Modules/Core/FiniteDifference/include" />
+            <Add directory="/opt/ITK/Modules/Core/GPUCommon/include" />
+            <Add directory="/opt/ITK/Modules/Core/GPUFiniteDifference/include" />
+            <Add directory="/opt/ITK/Modules/Core/ImageAdaptors/include" />
+            <Add directory="/opt/ITK/Modules/Core/ImageFunction/include" />
+            <Add directory="/opt/ITK/Modules/Core/Mesh/include" />
+            <Add directory="/opt/ITK/Modules/Core/QuadEdgeMesh/include" />
+            <Add directory="/opt/ITK/Modules/Core/SpatialObjects/include" />
+            <Add directory="/opt/ITK/Modules/Core/TestKernel/include" />
+            <Add directory="/opt/ITK/Modules/Core/Transform/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/AnisotropicSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/AntiAlias/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/BiasCorrection/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/BinaryMathematicalMorphology/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Colormap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Convolution/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/CurvatureFlow/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Deconvolution/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Denoising/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DiffusionTensorImage/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DisplacementField/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DistanceMap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/FFT/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/FastMarching/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUAnisotropicSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUImageFilterBase/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUThresholding/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageCompare/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageCompose/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFeature/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFilterBase/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFusion/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageGradient/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageGrid/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageIntensity/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageLabel/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageNoise/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageSources/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageStatistics/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/LabelMap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/MathematicalMorphology/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Path/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/QuadEdgeMeshFiltering/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Smoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/SpatialFunction/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Thresholding/include" />
+            <Add directory="/opt/ITK/Modules/IO/BMP/include" />
+            <Add directory="/opt/ITK/Modules/IO/BioRad/include" />
+            <Add directory="/opt/ITK/Modules/IO/CSV/include" />
+            <Add directory="/opt/ITK/Modules/IO/GDCM/include" />
+            <Add directory="/opt/ITK/Modules/IO/GE/include" />
+            <Add directory="/opt/ITK/Modules/IO/GIPL/include" />
+            <Add directory="/opt/ITK/Modules/IO/HDF5/include" />
+            <Add directory="/opt/ITK/Modules/IO/IPL/include" />
+            <Add directory="/opt/ITK/Modules/IO/ImageBase/include" />
+            <Add directory="/opt/ITK/Modules/IO/JPEG/include" />
+            <Add directory="/opt/ITK/Modules/IO/LSM/include" />
+            <Add directory="/opt/ITK/Modules/IO/MRC/include" />
+            <Add directory="/opt/ITK/Modules/IO/Mesh/include" />
+            <Add directory="/opt/ITK/Modules/IO/Meta/include" />
+            <Add directory="/opt/ITK/Modules/IO/NIFTI/include" />
+            <Add directory="/opt/ITK/Modules/IO/NRRD/include" />
+            <Add directory="/opt/ITK/Modules/IO/PNG/include" />
+            <Add directory="/opt/ITK/Modules/IO/RAW/include" />
+            <Add directory="/opt/ITK/Modules/IO/Siemens/include" />
+            <Add directory="/opt/ITK/Modules/IO/SpatialObjects/include" />
+            <Add directory="/opt/ITK/Modules/IO/Stimulate/include" />
+            <Add directory="/opt/ITK/Modules/IO/TIFF/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformBase/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformHDF5/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformInsightLegacy/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformMatlab/include" />
+            <Add directory="/opt/ITK/Modules/IO/VTK/include" />
+            <Add directory="/opt/ITK/Modules/IO/XML/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Eigen/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/FEM/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/NarrowBand/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/NeuralNetworks/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Optimizers/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Optimizersv4/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Polynomials/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Statistics/include" />
+            <Add directory="/opt/ITK/Modules/Registration/Common/include" />
+            <Add directory="/opt/ITK/Modules/Registration/FEM/include" />
+            <Add directory="/opt/ITK/Modules/Registration/GPUCommon/include" />
+            <Add directory="/opt/ITK/Modules/Registration/GPUPDEDeformable/include" />
+            <Add directory="/opt/ITK/Modules/Registration/Metricsv4/include" />
+            <Add directory="/opt/ITK/Modules/Registration/PDEDeformable/include" />
+            <Add directory="/opt/ITK/Modules/Registration/RegistrationMethodsv4/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/BioCell/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Classifiers/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/ConnectedComponents/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/DeformableMesh/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/KLMRegionGrowing/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LabelVoting/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LevelSets/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LevelSetsv4/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/MarkovRandomFieldsClassifiers/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/RegionGrowing/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/SignedDistanceFunction/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Voronoi/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Watersheds/include" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/DoubleConversion/src/double-conversion" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/DataDictionary" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/DataStructureAndEncodingDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/InformationObjectDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MediaStorageAndFileFormat" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MessageExchangeDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GIFTI/src/gifticlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/MetaIO/src/MetaIO/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NIFTI/src/nifti/niftilib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NIFTI/src/nifti/znzlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/PNG/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNLInstantiation/include" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/opt/ITK/Modules/Video/Core/include" />
+            <Add directory="/opt/ITK/Modules/Video/Filtering/include" />
+            <Add directory="/opt/ITK/Modules/Video/IO/include" />
+            <Add directory="/opt/caffe/bin/include" />
+            <Add directory="/opt/caffe/include" />
+            <Add directory="/opt/caffe/src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/atlas" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/opencv" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 generate/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="main">
+         <Option output="/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/main" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DCPU_ONLY" />
+            <Add option="-DITK_IO_FACTORY_REGISTER_MANAGER" />
+            <Add directory="/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/ITKIOFactoryRegistration" />
+            <Add directory="/opt/ITK/Bin/Modules/Core/Common" />
+            <Add directory="/opt/ITK/Bin/Modules/IO/ImageBase" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/DoubleConversion/src/double-conversion" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/GDCM" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/KWSys/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/MetaIO/src/MetaIO/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/Netlib" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/PNG/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/TIFF/src/itktiff" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/opt/ITK/Modules/Bridge/VTK/include" />
+            <Add directory="/opt/ITK/Modules/Core/Common/include" />
+            <Add directory="/opt/ITK/Modules/Core/FiniteDifference/include" />
+            <Add directory="/opt/ITK/Modules/Core/GPUCommon/include" />
+            <Add directory="/opt/ITK/Modules/Core/GPUFiniteDifference/include" />
+            <Add directory="/opt/ITK/Modules/Core/ImageAdaptors/include" />
+            <Add directory="/opt/ITK/Modules/Core/ImageFunction/include" />
+            <Add directory="/opt/ITK/Modules/Core/Mesh/include" />
+            <Add directory="/opt/ITK/Modules/Core/QuadEdgeMesh/include" />
+            <Add directory="/opt/ITK/Modules/Core/SpatialObjects/include" />
+            <Add directory="/opt/ITK/Modules/Core/TestKernel/include" />
+            <Add directory="/opt/ITK/Modules/Core/Transform/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/AnisotropicSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/AntiAlias/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/BiasCorrection/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/BinaryMathematicalMorphology/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Colormap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Convolution/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/CurvatureFlow/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Deconvolution/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Denoising/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DiffusionTensorImage/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DisplacementField/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DistanceMap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/FFT/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/FastMarching/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUAnisotropicSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUImageFilterBase/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUThresholding/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageCompare/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageCompose/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFeature/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFilterBase/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFusion/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageGradient/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageGrid/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageIntensity/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageLabel/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageNoise/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageSources/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageStatistics/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/LabelMap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/MathematicalMorphology/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Path/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/QuadEdgeMeshFiltering/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Smoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/SpatialFunction/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Thresholding/include" />
+            <Add directory="/opt/ITK/Modules/IO/BMP/include" />
+            <Add directory="/opt/ITK/Modules/IO/BioRad/include" />
+            <Add directory="/opt/ITK/Modules/IO/CSV/include" />
+            <Add directory="/opt/ITK/Modules/IO/GDCM/include" />
+            <Add directory="/opt/ITK/Modules/IO/GE/include" />
+            <Add directory="/opt/ITK/Modules/IO/GIPL/include" />
+            <Add directory="/opt/ITK/Modules/IO/HDF5/include" />
+            <Add directory="/opt/ITK/Modules/IO/IPL/include" />
+            <Add directory="/opt/ITK/Modules/IO/ImageBase/include" />
+            <Add directory="/opt/ITK/Modules/IO/JPEG/include" />
+            <Add directory="/opt/ITK/Modules/IO/LSM/include" />
+            <Add directory="/opt/ITK/Modules/IO/MRC/include" />
+            <Add directory="/opt/ITK/Modules/IO/Mesh/include" />
+            <Add directory="/opt/ITK/Modules/IO/Meta/include" />
+            <Add directory="/opt/ITK/Modules/IO/NIFTI/include" />
+            <Add directory="/opt/ITK/Modules/IO/NRRD/include" />
+            <Add directory="/opt/ITK/Modules/IO/PNG/include" />
+            <Add directory="/opt/ITK/Modules/IO/RAW/include" />
+            <Add directory="/opt/ITK/Modules/IO/Siemens/include" />
+            <Add directory="/opt/ITK/Modules/IO/SpatialObjects/include" />
+            <Add directory="/opt/ITK/Modules/IO/Stimulate/include" />
+            <Add directory="/opt/ITK/Modules/IO/TIFF/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformBase/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformHDF5/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformInsightLegacy/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformMatlab/include" />
+            <Add directory="/opt/ITK/Modules/IO/VTK/include" />
+            <Add directory="/opt/ITK/Modules/IO/XML/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Eigen/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/FEM/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/NarrowBand/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/NeuralNetworks/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Optimizers/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Optimizersv4/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Polynomials/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Statistics/include" />
+            <Add directory="/opt/ITK/Modules/Registration/Common/include" />
+            <Add directory="/opt/ITK/Modules/Registration/FEM/include" />
+            <Add directory="/opt/ITK/Modules/Registration/GPUCommon/include" />
+            <Add directory="/opt/ITK/Modules/Registration/GPUPDEDeformable/include" />
+            <Add directory="/opt/ITK/Modules/Registration/Metricsv4/include" />
+            <Add directory="/opt/ITK/Modules/Registration/PDEDeformable/include" />
+            <Add directory="/opt/ITK/Modules/Registration/RegistrationMethodsv4/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/BioCell/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Classifiers/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/ConnectedComponents/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/DeformableMesh/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/KLMRegionGrowing/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LabelVoting/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LevelSets/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LevelSetsv4/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/MarkovRandomFieldsClassifiers/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/RegionGrowing/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/SignedDistanceFunction/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Voronoi/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Watersheds/include" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/DoubleConversion/src/double-conversion" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/DataDictionary" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/DataStructureAndEncodingDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/InformationObjectDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MediaStorageAndFileFormat" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MessageExchangeDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GIFTI/src/gifticlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/MetaIO/src/MetaIO/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NIFTI/src/nifti/niftilib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NIFTI/src/nifti/znzlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/PNG/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNLInstantiation/include" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/opt/ITK/Modules/Video/Core/include" />
+            <Add directory="/opt/ITK/Modules/Video/Filtering/include" />
+            <Add directory="/opt/ITK/Modules/Video/IO/include" />
+            <Add directory="/opt/caffe/bin/include" />
+            <Add directory="/opt/caffe/include" />
+            <Add directory="/opt/caffe/src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/atlas" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/opencv" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 main" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="main/fast">
+         <Option output="/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/main" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DCPU_ONLY" />
+            <Add option="-DITK_IO_FACTORY_REGISTER_MANAGER" />
+            <Add directory="/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/ITKIOFactoryRegistration" />
+            <Add directory="/opt/ITK/Bin/Modules/Core/Common" />
+            <Add directory="/opt/ITK/Bin/Modules/IO/ImageBase" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/DoubleConversion/src/double-conversion" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/GDCM" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/KWSys/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/MetaIO/src/MetaIO/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/Netlib" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/PNG/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/TIFF/src/itktiff" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/opt/ITK/Bin/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/opt/ITK/Modules/Bridge/VTK/include" />
+            <Add directory="/opt/ITK/Modules/Core/Common/include" />
+            <Add directory="/opt/ITK/Modules/Core/FiniteDifference/include" />
+            <Add directory="/opt/ITK/Modules/Core/GPUCommon/include" />
+            <Add directory="/opt/ITK/Modules/Core/GPUFiniteDifference/include" />
+            <Add directory="/opt/ITK/Modules/Core/ImageAdaptors/include" />
+            <Add directory="/opt/ITK/Modules/Core/ImageFunction/include" />
+            <Add directory="/opt/ITK/Modules/Core/Mesh/include" />
+            <Add directory="/opt/ITK/Modules/Core/QuadEdgeMesh/include" />
+            <Add directory="/opt/ITK/Modules/Core/SpatialObjects/include" />
+            <Add directory="/opt/ITK/Modules/Core/TestKernel/include" />
+            <Add directory="/opt/ITK/Modules/Core/Transform/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/AnisotropicSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/AntiAlias/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/BiasCorrection/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/BinaryMathematicalMorphology/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Colormap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Convolution/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/CurvatureFlow/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Deconvolution/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Denoising/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DiffusionTensorImage/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DisplacementField/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/DistanceMap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/FFT/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/FastMarching/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUAnisotropicSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUImageFilterBase/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUSmoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/GPUThresholding/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageCompare/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageCompose/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFeature/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFilterBase/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageFusion/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageGradient/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageGrid/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageIntensity/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageLabel/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageNoise/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageSources/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/ImageStatistics/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/LabelMap/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/MathematicalMorphology/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Path/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/QuadEdgeMeshFiltering/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Smoothing/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/SpatialFunction/include" />
+            <Add directory="/opt/ITK/Modules/Filtering/Thresholding/include" />
+            <Add directory="/opt/ITK/Modules/IO/BMP/include" />
+            <Add directory="/opt/ITK/Modules/IO/BioRad/include" />
+            <Add directory="/opt/ITK/Modules/IO/CSV/include" />
+            <Add directory="/opt/ITK/Modules/IO/GDCM/include" />
+            <Add directory="/opt/ITK/Modules/IO/GE/include" />
+            <Add directory="/opt/ITK/Modules/IO/GIPL/include" />
+            <Add directory="/opt/ITK/Modules/IO/HDF5/include" />
+            <Add directory="/opt/ITK/Modules/IO/IPL/include" />
+            <Add directory="/opt/ITK/Modules/IO/ImageBase/include" />
+            <Add directory="/opt/ITK/Modules/IO/JPEG/include" />
+            <Add directory="/opt/ITK/Modules/IO/LSM/include" />
+            <Add directory="/opt/ITK/Modules/IO/MRC/include" />
+            <Add directory="/opt/ITK/Modules/IO/Mesh/include" />
+            <Add directory="/opt/ITK/Modules/IO/Meta/include" />
+            <Add directory="/opt/ITK/Modules/IO/NIFTI/include" />
+            <Add directory="/opt/ITK/Modules/IO/NRRD/include" />
+            <Add directory="/opt/ITK/Modules/IO/PNG/include" />
+            <Add directory="/opt/ITK/Modules/IO/RAW/include" />
+            <Add directory="/opt/ITK/Modules/IO/Siemens/include" />
+            <Add directory="/opt/ITK/Modules/IO/SpatialObjects/include" />
+            <Add directory="/opt/ITK/Modules/IO/Stimulate/include" />
+            <Add directory="/opt/ITK/Modules/IO/TIFF/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformBase/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformHDF5/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformInsightLegacy/include" />
+            <Add directory="/opt/ITK/Modules/IO/TransformMatlab/include" />
+            <Add directory="/opt/ITK/Modules/IO/VTK/include" />
+            <Add directory="/opt/ITK/Modules/IO/XML/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Eigen/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/FEM/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/NarrowBand/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/NeuralNetworks/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Optimizers/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Optimizersv4/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Polynomials/include" />
+            <Add directory="/opt/ITK/Modules/Numerics/Statistics/include" />
+            <Add directory="/opt/ITK/Modules/Registration/Common/include" />
+            <Add directory="/opt/ITK/Modules/Registration/FEM/include" />
+            <Add directory="/opt/ITK/Modules/Registration/GPUCommon/include" />
+            <Add directory="/opt/ITK/Modules/Registration/GPUPDEDeformable/include" />
+            <Add directory="/opt/ITK/Modules/Registration/Metricsv4/include" />
+            <Add directory="/opt/ITK/Modules/Registration/PDEDeformable/include" />
+            <Add directory="/opt/ITK/Modules/Registration/RegistrationMethodsv4/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/BioCell/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Classifiers/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/ConnectedComponents/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/DeformableMesh/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/KLMRegionGrowing/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LabelVoting/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LevelSets/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/LevelSetsv4/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/MarkovRandomFieldsClassifiers/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/RegionGrowing/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/SignedDistanceFunction/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Voronoi/include" />
+            <Add directory="/opt/ITK/Modules/Segmentation/Watersheds/include" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/DICOMParser/src/DICOMParser" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/DoubleConversion/src/double-conversion" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/Expat/src/expat" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/Common" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/DataDictionary" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/DataStructureAndEncodingDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/InformationObjectDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MediaStorageAndFileFormat" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GDCM/src/gdcm/Source/MessageExchangeDefinition" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/GIFTI/src/gifticlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/HDF5/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/JPEG/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/MetaIO/src/MetaIO/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NIFTI/src/nifti/niftilib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NIFTI/src/nifti/znzlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/NrrdIO/src/NrrdIO" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/PNG/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/TIFF/src" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/core" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/v3p/netlib" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNL/src/vxl/vcl" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/VNLInstantiation/include" />
+            <Add directory="/opt/ITK/Modules/ThirdParty/ZLIB/src" />
+            <Add directory="/opt/ITK/Modules/Video/Core/include" />
+            <Add directory="/opt/ITK/Modules/Video/Filtering/include" />
+            <Add directory="/opt/ITK/Modules/Video/IO/include" />
+            <Add directory="/opt/caffe/bin/include" />
+            <Add directory="/opt/caffe/include" />
+            <Add directory="/opt/caffe/src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/atlas" />
+            <Add directory="/usr/include/c++/4.8" />
+            <Add directory="/usr/include/c++/4.8/backward" />
+            <Add directory="/usr/include/opencv" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/4.8" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 main/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/generate_raw.cpp">
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/main.cpp">
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/ITKConfigVersion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/ITKConfig.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/ITKTargets.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDoubleConversion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKKWSys.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKVNL.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKVNLInstantiation.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKFiniteDifference.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageFilterBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKCurvatureFlow.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageAdaptors.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKNetlib.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKStatistics.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKTransform.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageFunction.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageGrid.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKAnisotropicSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageCompose.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOImageBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKZLIB.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKMetaIO.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKSpatialObjects.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageStatistics.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKPath.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageIntensity.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageLabel.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKThresholding.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKConnectedComponents.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKMathematicalMorphology.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKLabelMap.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKBinaryMathematicalMorphology.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKNarrowBand.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDistanceMap.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKQuadEdgeMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKFastMarching.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageCompare.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageGradient.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageSources.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageFeature.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKOptimizers.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKSignedDistanceFunction.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKLevelSets.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKAntiAlias.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKPolynomials.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKBiasCorrection.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKBioCell.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKClassifiers.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKColormap.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKFFT.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKConvolution.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDICOMParser.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDeconvolution.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDeformableMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDenoising.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDiffusionTensorImage.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKDisplacementField.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKEigen.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKExpat.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOXML.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOSpatialObjects.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKRegistrationCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKFEM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKPDEDeformableRegistration.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKFEMRegistration.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGDCM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKNIFTI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGIFTI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPUCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPUFiniteDifference.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPUAnisotropicSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPUImageFilterBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPURegistrationCommon.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPUPDEDeformableRegistration.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPUSmoothing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKGPUThresholding.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKHDF5.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOBMP.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOBioRad.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOCSV.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOGDCM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOIPL.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOGE.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOGIPL.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOHDF5.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKJPEG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOJPEG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKTIFF.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOTIFF.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOLSM.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOMRC.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOMesh.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOMeta.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIONIFTI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKNrrdIO.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIONRRD.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKPNG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOPNG.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIORAW.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOSiemens.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOStimulate.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOTransformBase.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOTransformHDF5.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOTransformInsightLegacy.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOTransformMatlab.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIOVTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageFusion.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKImageNoise.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKIntegratedTest.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKKLMRegionGrowing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKLabelVoting.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKLevelSetsv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKMarkovRandomFieldsClassifiers.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKOptimizersv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKMetricsv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKNeuralNetworks.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKQuadEdgeMeshFiltering.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKRegionGrowing.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKRegistrationMethodsv4.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKSpatialFunction.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKTestKernel.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKVTK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKVideoCore.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKVideoFiltering.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKVideoIO.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKVoronoi.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/Bin/lib/cmake/ITK-4.8/Modules/ITKWatersheds.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\Bin\lib\cmake\ITK-4.8\Modules\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/CMake/ITKModuleAPI.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\CMake\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/CMake/UseITK.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\CMake\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/CMake/itkImageIOFactoryRegisterManager.h.in">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\CMake\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/ITK/CMake/itkTransformIOFactoryRegisterManager.h.in">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\ITK\CMake\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../opt/caffe/bin/CaffeTargets.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\opt\caffe\bin\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../usr/share/OpenCV/OpenCVModules.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\usr\share\OpenCV\" />
+      </Unit>
+      <Unit filename="/home/miloslav/PhD/D-2016/Brats_DB_Converter/../../../../../usr/share/OpenCV/OpenCVModules-release.cmake">
+          <Option virtualFolder="CMake Files\..\..\..\..\..\usr\share\OpenCV\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

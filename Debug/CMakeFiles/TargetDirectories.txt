@@ -1,0 +1,2 @@
+/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/CMakeFiles/generate.dir
+/home/miloslav/PhD/D-2016/Brats_DB_Converter/Debug/CMakeFiles/main.dir
